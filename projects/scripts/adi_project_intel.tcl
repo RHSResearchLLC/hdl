@@ -42,6 +42,12 @@ proc adi_project {project_name {parameter_list {}}} {
     set quartus_pro_isused $::env(QUARTUS_PRO_ISUSED)
   }
 
+  if [regexp "_c10gx$" $project_name] {
+    set family "Cyclone 10 GX"
+    set device 10CX220YF780E5G
+    set system_qip_file system_bd/system_bd.qip
+  }
+
   if [regexp "_a10gx$" $project_name] {
     set family "Arria 10"
     set device 10AX115S2F45I1SG
