@@ -46,14 +46,14 @@ for {set i 0} {$i < 4} {incr i} {
   set_instance_assignment -name XCVR_RECONFIG_GROUP xcvr_${i} -to tx_serial_data[${i}]
 }
 
-set_location_assignment PIN_AR20 PIN_AE15 -to rx_sync               ; ## G09  FMCA_HPC_LA03_P
-set_location_assignment PIN_AR19 PIN_AE14 -to rx_sync(n)            ; ## G10  FMCA_HPC_LA03_N
-set_location_assignment PIN_AY15 PIN_AE16 -to rx_os_sync            ; ## G27  FMCA_HPC_LA25_P (Sniffer)
-set_location_assignment PIN_AY14 PIN_AD15 -to rx_os_sync(n)         ; ## G28  FMCA_HPC_LA25_N (Sniffer)
-set_location_assignment PIN_AR22 PIN_AE12 -to tx_sync               ; ## H07  FMCA_HPC_LA02_P
-set_location_assignment PIN_AT22 PIN_AD12 -to tx_sync(n)            ; ## H08  FMCA_HPC_LA02_N
-set_location_assignment PIN_AY17 PIN_AA16 -to sysref                ; ## G36  FMCA_HPC_LA33_P
-set_location_assignment PIN_AW17 PIN_AB16 -to sysref(n)             ; ## G37  FMCA_HPC_LA33_N
+set_location_assignment PIN_AE15 -to rx_sync               ; ## G09  FMCA_HPC_LA03_P
+set_location_assignment PIN_AE14 -to rx_sync(n)            ; ## G10  FMCA_HPC_LA03_N
+set_location_assignment PIN_AE16 -to rx_os_sync            ; ## G27  FMCA_HPC_LA25_P (Sniffer)
+set_location_assignment PIN_AD15 -to rx_os_sync(n)         ; ## G28  FMCA_HPC_LA25_N (Sniffer)
+set_location_assignment PIN_AE12 -to tx_sync               ; ## H07  FMCA_HPC_LA02_P
+set_location_assignment PIN_AD12 -to tx_sync(n)            ; ## H08  FMCA_HPC_LA02_N
+set_location_assignment PIN_AA16 -to sysref                ; ## G36  FMCA_HPC_LA33_P
+set_location_assignment PIN_AB16 -to sysref(n)             ; ## G37  FMCA_HPC_LA33_N
 
 set_instance_assignment -name IO_STANDARD LVDS -to rx_sync
 set_instance_assignment -name IO_STANDARD LVDS -to rx_os_sync
