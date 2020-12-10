@@ -93,13 +93,9 @@ proc jesd204_phy_composition_callback {} {
 
   set link_clk_frequency [expr $lane_rate / 40]
 
-  if {[string equal $device "Arria 10"]} {
-    set device_type 1
-  } elseif {[string equal $device "Stratix 10"]} {
-    set device_type 2
-  } else {
-    set device_type 0
-  }
+  # todo hardcoded Cyclone
+  set device_type 1
+
 
   add_instance link_clock clock_source $version
   set_instance_parameter_value link_clock {clockFrequency} [expr $link_clk_frequency*1000000]

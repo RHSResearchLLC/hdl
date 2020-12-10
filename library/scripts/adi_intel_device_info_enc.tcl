@@ -145,9 +145,10 @@ proc get_part_param {} {
     if {[catch {set fpga_technology [quartus::device::get_part_info -family $device]} fid]} {
       set fpga_technology "Unknown"
     }
-    if {[catch {set fpga_family [quartus::device::get_part_info -family_variant $device]} fid]} {
-      set fpga_family "Unknown"
-    }
+
+	# todo temporary hack
+	set fpga_family "GX"
+
     if {[catch {set speed_grade [quartus::device::get_part_info -speed_grade $device]} fid]} {
       set speed_grade "Unknown"
     }

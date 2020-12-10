@@ -54,7 +54,7 @@ set_instance_parameter_value sys_ddr3_cntrl {PHY_DDR3_USER_RZQ_IO_STD_ENUM} {IO_
 set_instance_parameter_value sys_ddr3_cntrl {PHY_DDR3_USER_DATA_IN_MODE_ENUM} {IN_OCT_120_CAL}
 set_instance_parameter_value sys_ddr3_cntrl {PHY_DDR3_USER_PLL_REF_CLK_IO_STD_ENUM} {IO_STD_LVDS}
 set_instance_parameter_value sys_ddr3_cntrl {MEM_DDR3_FORMAT_ENUM} {MEM_FORMAT_UDIMM}
-set_instance_parameter_value sys_ddr3_cntrl {MEM_DDR3_DQ_WIDTH} {40}
+set_instance_parameter_value sys_ddr3_cntrl {MEM_DDR3_DQ_WIDTH} {32}
 set_instance_parameter_value sys_ddr3_cntrl {MEM_DDR3_ROW_ADDR_WIDTH} {12}
 set_instance_parameter_value sys_ddr3_cntrl {MEM_DDR3_COL_ADDR_WIDTH} {10}
 set_instance_parameter_value sys_ddr3_cntrl {MEM_DDR3_BANK_ADDR_WIDTH} {3}

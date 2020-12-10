@@ -235,15 +235,8 @@ proc jesd204_phy_glue_elab {} {
   set sig_offset 0
   set const_offset 0
 
-  if {[string equal $device "Arria 10"]} {
-    set reconfig_avmm_address_width 10
-    set unused_width_per_lane 88
-  } elseif {[string equal $device "Stratix 10"]} {
-    set reconfig_avmm_address_width 11
-    set unused_width_per_lane 40
-  } else {
-    send_message error "Only Arria 10 and Stratix 10 are supported."
-  }
+  set reconfig_avmm_address_width 10
+  set unused_width_per_lane 88
 
   glue_add_if $num_of_lanes reconfig_clk clock sink true
   glue_add_if_port $num_of_lanes reconfig_clk reconfig_clk clk Input 1 true
