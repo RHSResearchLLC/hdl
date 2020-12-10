@@ -289,9 +289,6 @@ set_location_assignment PIN_AE4   -to gpio_bd_i[4]  ; ## dipsw4
 set_location_assignment PIN_AC7   -to gpio_bd_i[5]  ; ## dipsw5
 set_location_assignment PIN_AC6   -to gpio_bd_i[6]  ; ## dipsw6
 set_location_assignment PIN_AE6   -to gpio_bd_i[7]  ; ## dipsw7
-set_location_assignment PIN_AF6   -to gpio_bd_i[8]  ; ## pb0-s3
-set_location_assignment PIN_AE10  -to gpio_bd_i[9]  ; ## pb1-s2
-set_location_assignment PIN_AE11  -to gpio_bd_i[10] ; ## pb2-s1
 
 set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_o[0]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_o[1]
@@ -317,6 +314,3 @@ set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_i[4]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_i[5]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_i[6]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_i[7]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_i[8]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_i[9]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_i[10]

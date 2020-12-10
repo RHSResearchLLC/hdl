@@ -74,7 +74,7 @@ module system_top (
 
   // board gpio
 
-  input   [ 10:0]   gpio_bd_i,
+  input   [ 7:0]   gpio_bd_i,
   output  [ 15:0]   gpio_bd_o,
 
   // flash
@@ -164,7 +164,7 @@ module system_top (
   assign ddr3_a[14:12] = 3'd0;
 
   assign gpio_i[31:27] = gpio_o[31:27];
-  assign gpio_i[26:16] = gpio_bd_i;
+  assign gpio_i[26:19] = gpio_bd_i;
   assign gpio_i[15: 0] = gpio_o[15: 0];
 
   assign gpio_bd_o = gpio_o[15:0];
