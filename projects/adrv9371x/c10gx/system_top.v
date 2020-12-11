@@ -75,7 +75,7 @@ module system_top (
   // board gpio
 
   input   [ 7:0]   gpio_bd_i,
-  output  [ 15:0]   gpio_bd_o,
+  output  [ 7:0]   gpio_bd_o,
 
   // flash
 
@@ -167,7 +167,7 @@ module system_top (
   assign gpio_i[26:19] = gpio_bd_i;
   assign gpio_i[15: 0] = gpio_o[15: 0];
 
-  assign gpio_bd_o = gpio_o[15:0];
+  assign gpio_bd_o = gpio_o[7:0];
 
   // User code space at offset 0x0930_0000 per Intel's Board Update Portal
   // reference design used to program flash

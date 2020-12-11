@@ -104,7 +104,7 @@ set_location_assignment PIN_AA12    -to ad9371_gpio[3]        ; ## G19  FMCA_HPC
 set_location_assignment PIN_AC11    -to ad9371_gpio[5]        ; ## H26  FMCA_HPC_LA21_N
 set_location_assignment PIN_AE11    -to ad9371_gpio[6]        ; ## C22  FMCA_HPC_LA18_CC_P
 
-set_location_assignment PIN_AC17   -to ad9371_gpio[4]        ; ## H25  FMCA_HPC_LA21_P
+set_location_assignment PIN_AE1    -to ad9371_gpio[4]        ; ## H25  FMCA_HPC_LA21_P
 set_location_assignment PIN_AD18   -to ad9371_gpio[7]        ; ## C23  FMCA_HPC_LA18_CC_N
 set_location_assignment PIN_AD17   -to ad9371_gpio[8]        ; ## G25  FMCA_HPC_LA22_N     (LVDS_1N)
 set_location_assignment PIN_AE17   -to ad9371_gpio[9]        ; ## H22  FMCA_HPC_LA19_P     (LVDS_2P)

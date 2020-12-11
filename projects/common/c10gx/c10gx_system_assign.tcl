@@ -2,9 +2,9 @@
 # clocks and resets
 
 set_location_assignment PIN_J23 -to sys_clk ; ## Note- not actually differential on dev kit
-set_location_assignment PIN_H23 -to "sys_clk(n)"
+#set_location_assignment PIN_H23 -to "sys_clk(n)"
 set_location_assignment PIN_AC12 -to sys_resetn
-set_instance_assignment -name IO_STANDARD LVDS -to sys_clk
+#set_instance_assignment -name IO_STANDARD LVDS -to sys_clk
 set_instance_assignment -name IO_STANDARD "1.8 V" -to sys_resetn
 set_global_assignment -name PROGRAMMABLE_POWER_TECHNOLOGY_SETTING "FORCE ALL USED TILES TO HIGH SPEED"
 
@@ -108,8 +108,8 @@ set_location_assignment PIN_AB16 -to eth_ref_clk
 set_location_assignment PIN_AA16 -to "eth_ref_clk(n)"
 set_location_assignment PIN_AD20 -to eth_rxd
 set_location_assignment PIN_AD19 -to "eth_rxd(n)"
-set_location_assignment PIN_AC18 -to eth_txd
-set_location_assignment PIN_AC16 -to "eth_txd(n)"
+set_location_assignment PIN_AC16 -to eth_txd
+set_location_assignment PIN_AC17 -to "eth_txd(n)"
 
 set_instance_assignment -name IO_STANDARD LVDS -to eth_ref_clk
 set_instance_assignment -name IO_STANDARD LVDS -to eth_rxd
@@ -273,14 +273,6 @@ set_location_assignment PIN_AA6   -to gpio_bd_o[4]  ; ## led-g4-d6
 set_location_assignment PIN_AC3   -to gpio_bd_o[5]  ; ## led-g5-d5
 set_location_assignment PIN_AD3   -to gpio_bd_o[6]  ; ## led-g6-d4
 set_location_assignment PIN_AF2   -to gpio_bd_o[7]  ; ## led-g7-d3
-set_location_assignment PIN_AE1   -to gpio_bd_o[8]  ; ## led-r0-d10
-set_location_assignment PIN_AC2   -to gpio_bd_o[9]  ; ## led-r1-d9
-set_location_assignment PIN_AC1   -to gpio_bd_o[10] ; ## led-r2-d8
-set_location_assignment PIN_AD2   -to gpio_bd_o[11] ; ## led-r3-d7
-set_location_assignment PIN_AE2   -to gpio_bd_o[12] ; ## led-r4-d6
-set_location_assignment PIN_AF1   -to gpio_bd_o[13] ; ## led-r5-d5
-set_location_assignment PIN_AG1   -to gpio_bd_o[14] ; ## led-r6-d4
-set_location_assignment PIN_AF3   -to gpio_bd_o[15] ; ## led-r7-d3
 set_location_assignment PIN_AG3   -to gpio_bd_i[0]  ; ## dipsw0
 set_location_assignment PIN_AH3   -to gpio_bd_i[1]  ; ## dipsw1
 set_location_assignment PIN_AH2   -to gpio_bd_i[2]  ; ## dipsw2
@@ -298,14 +290,6 @@ set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_o[4]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_o[5]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_o[6]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_o[7]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_o[8]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_o[9]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_o[10]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_o[11]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_o[12]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_o[13]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_o[14]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_o[15]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_i[0]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_i[1]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_i[2]
@@ -314,3 +298,12 @@ set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_i[4]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_i[5]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_i[6]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to gpio_bd_i[7]
+
+
+#PIN_AC2
+#PIN_AC1
+#PIN_AD2
+#PIN_AE2
+#PIN_AF1
+#PIN_AG1
+#PIN_AF3
